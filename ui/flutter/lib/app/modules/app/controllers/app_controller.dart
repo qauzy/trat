@@ -226,7 +226,7 @@ class AppController extends GetxController with WindowListener, TrayListener {
       ),
     ]);
     if (!Util.isLinux()) {
-      // Linux seems not support setToolTip, refer to: https://github.com/GopeedLab/gopeed/issues/241
+      // Linux seems not support setToolTip, refer to: https://github.com/qauzy/trat/issues/241
       await trayManager.setToolTip('Gopeed');
     }
     await trayManager.setContextMenu(menu);

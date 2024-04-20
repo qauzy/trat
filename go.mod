@@ -1,4 +1,4 @@
-module github.com/GopeedLab/gopeed
+module github.com/qauzy/trat
 
 go 1.21
 

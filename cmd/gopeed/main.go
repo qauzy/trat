@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/GopeedLab/gopeed/internal/fetcher"
-	"github.com/GopeedLab/gopeed/pkg/base"
-	"github.com/GopeedLab/gopeed/pkg/download"
-	"github.com/GopeedLab/gopeed/pkg/protocol/http"
-	"github.com/GopeedLab/gopeed/pkg/util"
+	"github.com/qauzy/trat/internal/fetcher"
+	"github.com/qauzy/trat/pkg/base"
+	"github.com/qauzy/trat/pkg/download"
+	"github.com/qauzy/trat/pkg/protocol/http"
+	"github.com/qauzy/trat/pkg/util"
 	"strings"
 	"sync"
 )

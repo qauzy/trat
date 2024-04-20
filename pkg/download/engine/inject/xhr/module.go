@@ -2,10 +2,10 @@ package xhr
 
 import (
 	"bytes"
-	"github.com/GopeedLab/gopeed/pkg/download/engine/inject/file"
-	"github.com/GopeedLab/gopeed/pkg/download/engine/inject/formdata"
-	"github.com/GopeedLab/gopeed/pkg/download/engine/util"
 	"github.com/dop251/goja"
+	"github.com/qauzy/trat/pkg/download/engine/inject/file"
+	"github.com/qauzy/trat/pkg/download/engine/inject/formdata"
+	"github.com/qauzy/trat/pkg/download/engine/util"
 	"io"
 	"mime/multipart"
 	"net"

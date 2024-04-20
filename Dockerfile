@@ -13,8 +13,8 @@ COPY . .
 COPY --from=flutter /app/build/web ./cmd/web/dist
 ARG VERSION=dev
 RUN CGO_ENABLED=0 go build -tags nosqlite,web \
-      -ldflags="-s -w -X github.com/GopeedLab/gopeed/pkg/base.Version=$VERSION -X github.com/GopeedLab/gopeed/pkg/base.InDocker=true" \
-      -o dist/gopeed github.com/GopeedLab/gopeed/cmd/web
+      -ldflags="-s -w -X github.com/qauzy/trat/pkg/base.Version=$VERSION -X github.com/qauzy/trat/pkg/base.InDocker=true" \
+      -o dist/gopeed github.com/qauzy/trat/cmd/web
 
 FROM alpine:3.14.2
 LABEL maintainer="monkeyWie"

@@ -1,10 +1,10 @@
 package rest
 
 import (
-	"github.com/GopeedLab/gopeed/pkg/base"
-	"github.com/GopeedLab/gopeed/pkg/download"
-	"github.com/GopeedLab/gopeed/pkg/rest/model"
 	"github.com/gorilla/mux"
+	"github.com/qauzy/trat/pkg/base"
+	"github.com/qauzy/trat/pkg/download"
+	"github.com/qauzy/trat/pkg/rest/model"
 	"io"
 	"net/http"
 	"net/url"

@@ -6,7 +6,7 @@
   "version": "0.0.1",
   "homepage": "https://gopeed.com",
   "repository": {
-    "url": "https://github.com/GopeedLab/gopeed-extension-samples",
+    "url": "https://github.com/qauzy/trat-extension-samples",
     "directory": "extension-test"
   },
   "scripts": [

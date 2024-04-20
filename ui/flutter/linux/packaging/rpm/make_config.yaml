@@ -6,7 +6,7 @@ vendor: monkeyWie
 packager: madoka773
 packagerEmail: valigarmanda55@gmail.com
 license: GPL-3.0-or-later
-url: https://github.com/GopeedLab/gopeed
+url: https://github.com/qauzy/trat
 
 description: A modern download manager that supports all platforms. Built with Golang and Flutter.
 keywords:

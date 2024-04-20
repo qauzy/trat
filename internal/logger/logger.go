@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"github.com/GopeedLab/gopeed/pkg/util"
+	"github.com/qauzy/trat/pkg/util"
 	"github.com/rs/zerolog"
 	"io"
 	"os"

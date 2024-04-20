@@ -1,9 +1,9 @@
 package download
 
 import (
-	"github.com/GopeedLab/gopeed/internal/test"
-	"github.com/GopeedLab/gopeed/pkg/base"
-	"github.com/GopeedLab/gopeed/pkg/protocol/http"
+	"github.com/qauzy/trat/internal/test"
+	"github.com/qauzy/trat/pkg/base"
+	"github.com/qauzy/trat/pkg/protocol/http"
 	"sync"
 	"testing"
 	"time"

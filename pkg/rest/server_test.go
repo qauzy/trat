@@ -6,10 +6,10 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/GopeedLab/gopeed/internal/test"
-	"github.com/GopeedLab/gopeed/pkg/base"
-	"github.com/GopeedLab/gopeed/pkg/download"
-	"github.com/GopeedLab/gopeed/pkg/rest/model"
+	"github.com/qauzy/trat/internal/test"
+	"github.com/qauzy/trat/pkg/base"
+	"github.com/qauzy/trat/pkg/download"
+	"github.com/qauzy/trat/pkg/rest/model"
 	"io"
 	"net"
 	"net/http"
@@ -59,7 +59,7 @@ var (
 		Opt: createOpts,
 	}
 	installExtensionReq = &model.InstallExtension{
-		URL: "https://github.com/GopeedLab/gopeed-extension-samples#github-contributor-avatars-sample",
+		URL: "https://github.com/qauzy/trat-extension-samples#github-contributor-avatars-sample",
 	}
 )
 
@@ -351,7 +351,7 @@ func TestInstallExtension(t *testing.T) {
 
 		// not a valid extension repository
 		code, _ := httpRequest[string](http.MethodPost, "/api/v1/extensions", &model.InstallExtension{
-			URL: "https://github.com/GopeedLab/gopeed",
+			URL: "https://github.com/qauzy/trat",
 		})
 		checkCode(code, model.CodeError)
 
@@ -454,7 +454,7 @@ func TestFsExtensionFail(t *testing.T) {
 func TestDoProxy(t *testing.T) {
 	doTest(func() {
 		code, respBody := doHttpRequest0(http.MethodGet, "/api/v1/proxy", map[string]string{
-			"X-Target-Uri": "https://github.com/GopeedLab/gopeed/raw/695da7ea87d2b455552b709d3cb4d7879484d4d1/README.md",
+			"X-Target-Uri": "https://github.com/qauzy/trat/raw/695da7ea87d2b455552b709d3cb4d7879484d4d1/README.md",
 		}, nil)
 		if code != http.StatusOK {
 			t.Errorf("DoProxy() got = %v, want %v", code, http.StatusOK)
@@ -468,7 +468,7 @@ func TestDoProxy(t *testing.T) {
 
 	doTest(func() {
 		code, _ := doHttpRequest0(http.MethodGet, "/api/v1/proxy", map[string]string{
-			"X-Target-Uri": "https://github.com/GopeedLab/gopeed/raw/695da7ea87d2b455552b709d3cb4d7879484d4d1/NOT_FOUND",
+			"X-Target-Uri": "https://github.com/qauzy/trat/raw/695da7ea87d2b455552b709d3cb4d7879484d4d1/NOT_FOUND",
 		}, nil)
 		if code != http.StatusNotFound {
 			t.Errorf("DoProxy() got = %v, want %v", code, http.StatusNotFound)

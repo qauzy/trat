@@ -2,7 +2,7 @@ package base
 
 import (
 	"fmt"
-	"github.com/GopeedLab/gopeed/pkg/util"
+	"github.com/qauzy/trat/pkg/util"
 	"golang.org/x/exp/slices"
 	"time"
 )

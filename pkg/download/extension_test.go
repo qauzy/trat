@@ -2,10 +2,10 @@ package download
 
 import (
 	"errors"
-	"github.com/GopeedLab/gopeed/internal/logger"
-	"github.com/GopeedLab/gopeed/pkg/base"
-	gojaerror "github.com/GopeedLab/gopeed/pkg/download/engine/inject/error"
 	"github.com/dop251/goja"
+	"github.com/qauzy/trat/internal/logger"
+	"github.com/qauzy/trat/pkg/base"
+	gojaerror "github.com/qauzy/trat/pkg/download/engine/inject/error"
 	"os"
 	"testing"
 	"time"
@@ -47,11 +47,11 @@ func TestDownloader_InstallExtensionByFolderDevMode(t *testing.T) {
 
 func TestDownloader_InstallExtensionByGit(t *testing.T) {
 	setupDownloader(func(downloader *Downloader) {
-		if _, err := downloader.InstallExtensionByGit("https://github.com/GopeedLab/gopeed-extension-samples#github-release-sample"); err != nil {
+		if _, err := downloader.InstallExtensionByGit("https://github.com/qauzy/trat-extension-samples#github-release-sample"); err != nil {
 			t.Fatal(err)
 		}
 		rr, err := downloader.Resolve(&base.Request{
-			URL: "https://github.com/GopeedLab/gopeed/releases",
+			URL: "https://github.com/qauzy/trat/releases",
 		})
 		if err != nil {
 			t.Fatal(err)
@@ -64,11 +64,11 @@ func TestDownloader_InstallExtensionByGit(t *testing.T) {
 
 func TestDownloader_InstallExtensionByGitSimple(t *testing.T) {
 	setupDownloader(func(downloader *Downloader) {
-		if _, err := downloader.InstallExtensionByGit("github.com/GopeedLab/gopeed-extension-samples#github-release-sample"); err != nil {
+		if _, err := downloader.InstallExtensionByGit("github.com/qauzy/trat-extension-samples#github-release-sample"); err != nil {
 			t.Fatal(err)
 		}
 		rr, err := downloader.Resolve(&base.Request{
-			URL: "https://github.com/GopeedLab/gopeed/releases",
+			URL: "https://github.com/qauzy/trat/releases",
 		})
 		if err != nil {
 			t.Fatal(err)
@@ -81,11 +81,11 @@ func TestDownloader_InstallExtensionByGitSimple(t *testing.T) {
 
 func TestDownloader_InstallExtensionByGitFull(t *testing.T) {
 	setupDownloader(func(downloader *Downloader) {
-		if _, err := downloader.InstallExtensionByGit("https://github.com/GopeedLab/gopeed-extension-samples.git#github-release-sample"); err != nil {
+		if _, err := downloader.InstallExtensionByGit("https://github.com/qauzy/trat-extension-samples.git#github-release-sample"); err != nil {
 			t.Fatal(err)
 		}
 		rr, err := downloader.Resolve(&base.Request{
-			URL: "https://github.com/GopeedLab/gopeed/releases",
+			URL: "https://github.com/qauzy/trat/releases",
 		})
 		if err != nil {
 			t.Fatal(err)

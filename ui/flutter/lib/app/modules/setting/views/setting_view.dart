@@ -397,7 +397,7 @@ class SettingView extends GetView<SettingController> {
 
     buildThanks() {
       const thankPage =
-          'https://github.com/GopeedLab/gopeed/graphs/contributors';
+          'https://github.com/qauzy/trat/graphs/contributors';
       return ListTile(
         title: Text('thanks'.tr),
         subtitle: Text('thanksDesc'.tr),

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/GopeedLab/gopeed/cmd"
-	"github.com/GopeedLab/gopeed/pkg/rest/model"
+	"github.com/qauzy/trat/cmd"
+	"github.com/qauzy/trat/pkg/rest/model"
 )
 
 // only for local development

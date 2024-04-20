@@ -1,12 +1,12 @@
 package download
 
 import (
-	"github.com/GopeedLab/gopeed/internal/controller"
-	"github.com/GopeedLab/gopeed/internal/fetcher"
-	"github.com/GopeedLab/gopeed/internal/protocol/bt"
-	"github.com/GopeedLab/gopeed/internal/protocol/http"
-	"github.com/GopeedLab/gopeed/pkg/base"
-	"github.com/GopeedLab/gopeed/pkg/util"
+	"github.com/qauzy/trat/internal/controller"
+	"github.com/qauzy/trat/internal/fetcher"
+	"github.com/qauzy/trat/internal/protocol/bt"
+	"github.com/qauzy/trat/internal/protocol/http"
+	"github.com/qauzy/trat/pkg/base"
+	"github.com/qauzy/trat/pkg/util"
 
 	gonanoid "github.com/matoous/go-nanoid/v2"
 	"net/url"

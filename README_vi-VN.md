@@ -1,7 +1,7 @@
-[![Trạng thái kiểm tra](https://github.com/GopeedLab/gopeed/workflows/test/badge.svg)](https://github.com/GopeedLab/gopeed/actions?query=workflow%3Atest)
+[![Trạng thái kiểm tra](https://github.com/qauzy/trat/workflows/test/badge.svg)](https://github.com/qauzy/trat/actions?query=workflow%3Atest)
 [![Codecov](https://codecov.io/gh/GopeedLab/gopeed/branch/main/graph/badge.svg)](https://codecov.io/gh/GopeedLab/gopeed)
-[![Phiên bản](https://img.shields.io/github/release/GopeedLab/gopeed.svg)](https://github.com/GopeedLab/gopeed/releases)
-[![Tải về](https://img.shields.io/github/downloads/GopeedLab/gopeed/total.svg)](https://github.com/GopeedLab/gopeed/releases)
+[![Phiên bản](https://img.shields.io/github/release/GopeedLab/gopeed.svg)](https://github.com/qauzy/trat/releases)
+[![Tải về](https://img.shields.io/github/downloads/GopeedLab/gopeed/total.svg)](https://github.com/qauzy/trat/releases)
 [![Ủng hộ](https://img.shields.io/badge/%24-ủng%20hộ-ff69b4.svg)](https://docs.gopeed.com/donate.html)
 [![Discord](https://img.shields.io/discord/1037992631881449472?label=Discord&logo=discord&style=social)](https://discord.gg/ZUJqJrwCGB)
 
@@ -72,7 +72,7 @@ Truy cập ✈ [Trang web chính thức](https://gopeed.com) | 📖 [Tài liệu
         <tr>
             <td>Web</td>
             <td></td>
-            <td><a href="https://github.com/GopeedLab/gopeed/releases/latest">Liên kết</a></td>
+            <td><a href="https://github.com/qauzy/trat/releases/latest">Liên kết</a></td>
         </tr>
         <tr>
             <td>Docker</td>
@@ -89,7 +89,7 @@ Thêm thông tin về cài đặt, vui lòng tham khảo [Cài đặt](https://d
 Sử dụng `go install`:
 
 ```bash
-go install github.com/GopeedLab/gopeed/cmd/gopeed@latest
+go install github.com/qauzy/trat/cmd/gopeed@latest
 ```
 
 ## Quyên góp
@@ -132,7 +132,7 @@ command:
 - windows
 
 ```bash
-go build -tags nosqlite -ldflags="-w -s" -buildmode=c-shared -o ui/flutter/windows/libgopeed.dll github.com/GopeedLab/gopeed/bind/desktop
+go build -tags nosqlite -ldflags="-w -s" -buildmode=c-shared -o ui/flutter/windows/libgopeed.dll github.com/qauzy/trat/bind/desktop
 cd ui/flutter
 flutter build windows
 ```
@@ -140,7 +140,7 @@ flutter build windows
 - macos
 
 ```bash
-go build -tags nosqlite -ldflags="-w -s" -buildmode=c-shared -o ui/flutter/macos/Frameworks/libgopeed.dylib github.com/GopeedLab/gopeed/bind/desktop
+go build -tags nosqlite -ldflags="-w -s" -buildmode=c-shared -o ui/flutter/macos/Frameworks/libgopeed.dylib github.com/qauzy/trat/bind/desktop
 cd ui/flutter
 flutter build macos
 ```
@@ -148,7 +148,7 @@ flutter build macos
 - linux
 
 ```bash
-go build -tags nosqlite -ldflags="-w -s" -buildmode=c-shared -o ui/flutter/linux/bundle/lib/libgopeed.so github.com/GopeedLab/gopeed/bind/desktop
+go build -tags nosqlite -ldflags="-w -s" -buildmode=c-shared -o ui/flutter/linux/bundle/lib/libgopeed.so github.com/qauzy/trat/bind/desktop
 cd ui/flutter
 flutter build linux
 ```
@@ -168,7 +168,7 @@ command:
 - android
 
 ```bash
-gomobile bind -tags nosqlite -ldflags="-w -s" -o ui/flutter/android/app/libs/libgopeed.aar -target=android -androidapi 19 -javapkg="com.gopeed" github.com/GopeedLab/gopeed/bind/mobile
+gomobile bind -tags nosqlite -ldflags="-w -s" -o ui/flutter/android/app/libs/libgopeed.aar -target=android -androidapi 19 -javapkg="com.gopeed" github.com/qauzy/trat/bind/mobile
 cd ui/flutter
 flutter build apk
 ```
@@ -176,7 +176,7 @@ flutter build apk
 - ios
 
 ```bash
-gomobile bind -tags nosqlite -ldflags="-w -s" -o ui/flutter/ios/Frameworks/Libgopeed.xcframework -target=ios github.com/GopeedLab/gopeed/bind/mobile
+gomobile bind -tags nosqlite -ldflags="-w -s" -o ui/flutter/ios/Frameworks/Libgopeed.xcframework -target=ios github.com/qauzy/trat/bind/mobile
 cd ui/flutter
 flutter build ios --no-codesign
 ```
@@ -191,14 +191,14 @@ flutter build web
 cd ../../
 rm -rf cmd/web/dist
 cp -r ui/flutter/build/web cmd/web/dist
-go build -tags nosqlite,web -ldflags="-s -w" -o bin/ github.com/GopeedLab/gopeed/cmd/web
+go build -tags nosqlite,web -ldflags="-s -w" -o bin/ github.com/qauzy/trat/cmd/web
 ```
 
 ## Tín dụng
 
 ### Người đóng góp
 
-<a href="https://github.com/GopeedLab/gopeed/graphs/contributors">
+<a href="https://github.com/qauzy/trat/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=GopeedLab/gopeed" />
 </a>
 
